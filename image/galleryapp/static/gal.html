@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NATURE</h1>
+    </header>
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="gallery 1.jpg" >
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="gal 2.jpg"  >
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="gal 3.jpg" >
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="gal 4.jpg" >
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
